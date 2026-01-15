@@ -70,3 +70,10 @@ L'API Web Serial ne fonctionne qu'avec Microsoft Edge et Google Chrome (et les n
 ## Résultats
 
 ![Plant Lens](./docs/2026-01-15-plant-lens-1.jpeg)
+
+## Fonctionnement
+
+![LLM Consommation](./docs/2026-01-15-presentation-finale-illustratation-1.jpeg)
+![Goute à goute](./docs/2026-01-15-presentation-finale-illustratation-2.jpeg)
+![Gaspillage](./docs/2026-01-15-presentation-finale-illustratation-3.jpeg)
+![Réservoir](./docs/2026-01-15-presentation-finale-illustratation-4.jpeg)
