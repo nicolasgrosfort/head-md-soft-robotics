@@ -8,15 +8,9 @@ date: 2026-01-14
 description: Projet final, à documenter. Utilise Ollama, local only
 ---
 
-## Recherche
+# Plant Lens
 
-![[2026-01-13-topen-close-water-prototype.gif]]
-
-![[2026-01-14-llm-open-ai-api-demo-1.gif]]
-![[2026-01-13-try-to-make-robot-breath.jpeg]]
-![[2026-01-13-try-to-make-robot-breath.heic]]
-
-![[2026-01-13-plant-robot-under-drip.jpeg]]
+Making the water consumption of language models visible through plants.
 
 ## Lancer le projet
 
@@ -72,3 +66,7 @@ Il est possible d'envoyer des comandes directement à l'Arduino via l'onglet `lo
 ## Important
 
 L'API Web Serial ne fonctionne qu'avec Microsoft Edge et Google Chrome (et les navigateurs basés sur Chromium).
+
+## Résultats
+
+![Plant Lens](./docs/2026-01-15-plant-lens-1.jpeg)
