@@ -25,7 +25,7 @@ description: Projet final, à documenter. Utilise Ollama, local only
 Si Homebrew n'est pas installé, l'installer avec la commande:
 
 ```bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
 ### Installer Ollama
@@ -33,26 +33,41 @@ Si Homebrew n'est pas installé, l'installer avec la commande:
 Intaller Ollama et télécharger le modèle gemma3:1b.
 
 ```bash
-brew install ollama
-ollama pull llama2gemma3:1b
+  brew install ollama
+  ollama pull gemma3:1b
 ```
 
-Ouzvrir deux terminaux, avec l'arduinio connecté en USB.
+### Installer node.js & yarn
+
+Installer node.js avec Homebrew:
+
+```bash
+  brew install node
+  brew install yarn
+```
+
+### Lancer le serveur et le client
 
 ```bash
   cd client/
+  yarn install
   yarn dev
 ```
 
 ```bash
   cd server/
+  yarn install
   yarn dev
 ```
 
-La page index.html est le portail de communication avec l'arduino (Controller).
-La page remote.html est la télécomande qui permet de lancer les requetes websocket (Remote).
+### Brancher l'Arduino ou ouvrir Chrome
 
-Le projet est exposé sur [sandbox.tekh.studio](https://sandbox.tekh.studio), et fonctionne de la même manière.
+1. Brancher l'Arduino en USB.
+2. Ouvrir Google Chrome.
+   1. Un onglet à l'adresse: `localhost:5173` pour connecter l'Arduino.
+   2. Un onglet à l'adresse: `localhost:5173/llm` pour le chat.
+
+Il est possible d'envoyer des comandes directement à l'Arduino via l'onglet `localhost:5173/remote`.
 
 ## Important
 
