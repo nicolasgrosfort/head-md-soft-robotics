@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="src/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LLM</title>
+  </head>
+  <body>
+    <div id="llm">
+      <div id="sidebar">
+        <div id="water"></div>
+        <h1><span id="total-water-cost">0</span> [l]</h1>
+      </div>
+      <div id="main"></div>
+      <div id="prompt">
+        <div id="command">
+          <textarea
+            id="input"
+            rows="6"
+            autofocus
+            placeholder="Délègues moi une tâche..."
+          ></textarea>
+          <button id="send">ENVOYER</button>
+        </div>
+      </div>
+      <div id="end-message">
+        <h2>Réserve d'eau épuisée !</h2>
+        <p>
+          Tu as consomé <span id="water-count">[xx]</span> litres d'eau,<br />
+          soit la consommation annuelle d'une plante, <br />en seulement
+          <span id="prompt-count">[xx]</span> requêtes pour un total de
+          <span id="tokens-count">[xx]</span> tokens.
+        </p>
+        <button id="restart">RECOMMENCER</button>
+      </div>
+    </div>
+    <script type="module" src="/src/llm.js"></script>
+  </body>
+</html>
