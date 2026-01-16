@@ -15,9 +15,7 @@ const waterCount = document.querySelector("#water-count");
 const tokensCount = document.querySelector("#tokens-count");
 
 const waterConsomption = [];
-const inputHistory = [
-  "Quelle journée magnifiquement ensoleillée ☀️, n'est-ce pas ? <br />Que puis-je faire <s>à ta place</s> pour toi ?",
-];
+const inputHistory = [];
 
 let waterReserve = WATER_RESERVE;
 let currentAngle = 120;
@@ -29,12 +27,11 @@ socket.on("current-angle", (angleValue) => {
 });
 
 socket.on("llm-response", async (response) => {
-  //   await new Promise((resolve) => setTimeout(resolve, 2000)); // Simulate thinking time
   enableCommands();
+
   // --- LLM response ---
   const textResponse = response.message.content;
   console.log("Response from LLM:", textResponse);
-  inputHistory.push(textResponse);
 
   const outputTokens = response.eval_count;
   totalTokens += outputTokens;
@@ -43,28 +40,32 @@ socket.on("llm-response", async (response) => {
 
   if (waterReserve <= 0) {
     waterReserve = 0;
-    water.style.height = `0%`;
+    water.style.display = "none";
     sendButton.disabled = true;
     input.disabled = true;
-    endMessage.style.display = "flex";
 
     promptCount.textContent = `${(inputHistory.length - 1) / 2}`;
     waterCount.textContent = `${WATER_RESERVE}`;
     tokensCount.textContent = `${totalTokens}`;
+
+    inputHistory.push(
+      `
+        <u>Réserve d'eau épuisée !</u><br /><br />
+        Tu as consommé toute ma réserve d'eau de <u>${WATER_RESERVE} litres</u>, <br />soit la consommation annuelle d'une plante d'intérieur moyenne.<br />
+        Cela en seulement ${
+          (inputHistory.length + 1) / 2
+        } questions posées pour un total de ${totalTokens} tokens.<br /><br />
+        <button id="restart" onclick="window.location.reload()">Recommencer</button>
+      `
+    );
+  } else {
+    inputHistory.push(textResponse);
   }
 
   // --- UI updates ---
   totalWaterCost.textContent = `${waterReserve.toFixed(2)}`;
   water.style.height = `${getPercent(waterReserve, WATER_RESERVE)}%`;
-  main.innerHTML = inputHistory
-    .map((text, i) =>
-      i % 2 === 0
-        ? `<p class="ai"><span>ROBOT</span>${text}</p>`
-        : `<p class="user"><span>HUMAIN</span>${text}</p>`
-    )
-    .join("\n");
-
-  main.scrollTop = main.scrollHeight;
+  renderMessages();
 });
 
 sendButton.onclick = () => {
@@ -76,25 +77,10 @@ sendButton.onclick = () => {
   const inputTokens = countTokens(prompt);
   waterConsomption.push(tokenToLiters(inputTokens));
 
-  const duration = tokenToTime(inputTokens);
-  //   socket.emit("open-for", {
-  //     angle: 30,
-  //     duration,
-  //   });
-
-  socket.emit("llm-prompt", { prompts: inputHistory.slice(1), waterReserve });
+  socket.emit("llm-prompt", { prompts: inputHistory, waterReserve });
 
   disableCommands();
-
-  input.value = "";
-  main.innerHTML = inputHistory
-    .map((text, i) =>
-      i % 2 === 0
-        ? `<p class="ai"><span>ROBOT</span>${text}</p>`
-        : `<p class="user"><span>HUMAIN</span>${text}</p>`
-    )
-    .join("\n");
-  main.scrollTop = main.scrollHeight;
+  renderMessages();
 };
 
 input.onkeydown = (e) => {
@@ -119,11 +105,6 @@ function tokenToLiters(tokens) {
   return tokens * LITER_PER_TOKENS;
 }
 
-function tokenToTime(tokens) {
-  const time = tokens * 5000;
-  return time;
-}
-
 function getPercent(value, max) {
   if (max === 0) {
     return "Max value cannot be zero.";
@@ -132,10 +113,6 @@ function getPercent(value, max) {
 }
 
 function initialize() {
-  main.innerHTML = inputHistory
-    .map((text) => `<p class="ai"><span>ROBOT</span>${text}</p>`)
-    .join("\n");
-
   water.style.height = "100%";
   totalWaterCost.textContent = `${waterReserve}`;
 }
@@ -153,10 +130,22 @@ function enableCommands() {
   socket.emit("close");
   sendButton.disabled = false;
   input.disabled = false;
-  input.placeholder = "Délègues moi une tâche...";
+  input.placeholder = "Poser une question";
   sendButton.textContent = "ENVOYER";
   input.focus();
   inputHistory.pop();
+}
+
+function renderMessages() {
+  input.value = "";
+  main.innerHTML = inputHistory
+    .map((text, i) =>
+      i % 2 === 0
+        ? `<p class="user"><span>Humain ❤️</span>${text}</p>`
+        : `<p class="ai"><span>Robot 🤖</span>${text}</p>`
+    )
+    .join("\n");
+  main.scrollTop = main.scrollHeight;
 }
 
 initialize();
