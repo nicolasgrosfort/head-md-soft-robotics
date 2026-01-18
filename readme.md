@@ -5,6 +5,8 @@ Sentinelle environnementale. Cet atelier explore le concept de robots souples, Ã
 ## Plant Lens
 
 ![Plant Lens](./code/docs/2026-01-15-plant-lens-1.jpeg)
+![Plant Lens](./code/docs/2026-01-18-plant-lens-demo.jpeg)
+![Plant Lens](./code/docs/2026-01-18-plant-lens-teaser.gif)
 
 ### Fonctionnement
 
