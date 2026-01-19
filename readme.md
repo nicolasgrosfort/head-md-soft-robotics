@@ -2,12 +2,16 @@
 
 Sentinelle environnementale. Cet atelier explore le concept de robots souples, écologiques et sensibles ; des robots agissant comme des agents de soin et d'observation. Des éco-machines spéculatives qui interrogent notre relation à la technologie, à l'écologie et à la vie non humaine.
 
+## Auteurs
+
+- Nicolas Grosfort — [@nicolasgrosfort](https://www.instagram.com/nicolasgrosfort/)
+- Lisa Giraud [@lisa_giraud_ceramique](https://www.instagram.com/lisa_giraud_ceramique/)
+
 ## Sommaire
 
-- [Code source](./code/readme.md)
-- [Processus & recherche](./research/readme.md)
-- [Press Kit](./press-kit/readme.md)
-- [Comment ça marche ?](./code/readme.md#fonctionnement)
+- [Code source & technical explanations](./code/readme.md)
+- [Press Kit, photos & videos](./press-kit/readme.md)
+- [Recherche, exploration et références](./research/readme.md)
 
 ## Plant Lens
 

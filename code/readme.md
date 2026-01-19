@@ -1,13 +1,3 @@
----
-tags:
-  - serial
-  - web
-  - arduino
-  - websocket
-date: 2026-01-14
-description: Projet final, à documenter. Utilise Ollama, local only
----
-
 # Plant Lens
 
 Making the water consumption of language models visible through plants.
@@ -67,13 +57,22 @@ Il est possible d'envoyer des comandes directement à l'Arduino via l'onglet `lo
 
 L'API Web Serial ne fonctionne qu'avec Microsoft Edge et Google Chrome (et les navigateurs basés sur Chromium).
 
-## Aperçu
+## Brancher le Arduino
 
-![Plant Lens](./docs/2026-01-15-plant-lens-1.jpeg)
+![Working Schema](../press-kit/assets/2026-01-19-working-schema-1.png)
 
-## Fonctionnement
+## Liste du matériel
 
-![LLM Consommation](./docs/2026-01-15-how-it-works-1.jpeg)
-![Goute à goute](./docs/2026-01-15-how-it-works-2.jpeg)
-![Gaspillage](./docs/2026-01-15-how-it-works-3.jpeg)
-![Réservoir](./docs/2026-01-15-how-it-works-4.jpeg)
+- Arduino Uno
+  - Câble USB A
+  - Breadboard
+  - Résistances 220Ω
+  - Servo moteur (2x)
+  - Câbles électriques (~5m)
+  - LED blanche
+- Réservoir d'eau (24L)
+  - Tuyau en silicone (6mm de diamètre intérieur) (~4m)
+- Ordinateur
+- Lumière diffuseur (optionnel)
+- Plante en pot (ex: Pothos, Ficus, etc.)
+- Étagères ou support pour l'installation plante
