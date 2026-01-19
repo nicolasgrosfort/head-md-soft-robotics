@@ -4,8 +4,8 @@ Sentinelle environnementale. Cet atelier explore le concept de robots souples, �
 
 ## Auteurs
 
-- Nicolas Grosfort — [@nicolasgrosfort](https://www.instagram.com/nicolasgrosfort/)
 - Lisa Giraud [@lisa_giraud_ceramique](https://www.instagram.com/lisa_giraud_ceramique/)
+- Nicolas Grosfort — [@nicolasgrosfort](https://www.instagram.com/nicolasgrosfort/)
 
 ## Sommaire
 
