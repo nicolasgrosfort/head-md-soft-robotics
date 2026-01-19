@@ -67,13 +67,13 @@ Il est possible d'envoyer des comandes directement à l'Arduino via l'onglet `lo
 
 L'API Web Serial ne fonctionne qu'avec Microsoft Edge et Google Chrome (et les navigateurs basés sur Chromium).
 
-## Résultats
+## Aperçu
 
 ![Plant Lens](./docs/2026-01-15-plant-lens-1.jpeg)
 
 ## Fonctionnement
 
-![LLM Consommation](./docs/2026-01-15-presentation-finale-illustratation-1.jpeg)
-![Goute à goute](./docs/2026-01-15-presentation-finale-illustratation-2.jpeg)
-![Gaspillage](./docs/2026-01-15-presentation-finale-illustratation-3.jpeg)
-![Réservoir](./docs/2026-01-15-presentation-finale-illustratation-4.jpeg)
+![LLM Consommation](./docs/2026-01-15-how-it-works-1.jpeg)
+![Goute à goute](./docs/2026-01-15-how-it-works-2.jpeg)
+![Gaspillage](./docs/2026-01-15-how-it-works-3.jpeg)
+![Réservoir](./docs/2026-01-15-how-it-works-4.jpeg)
