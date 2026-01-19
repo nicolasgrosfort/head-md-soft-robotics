@@ -10,7 +10,7 @@ Making the water consumption of language models visible through plants.
 
 ### Summary
 
-Plant Lens is a speculative installation that makes the water consumption of language models perceptible through a living organism. By linking digital interactions to the hydration of an indoor plant, the project translates an invisible environmental cost into a physical and tangible process. The plant becomes a fragile unit of measurement — a lens through which the material impact of computation can be observed. Plant Lens questions technological delegation, progress, and ecological responsibility by proposing an interface that encourages restraint rather than optimization.
+Plant Lens is a speculative installation that makes the water consumption of language models perceptible through a living organism. By linking digital interactions to the hydration of an indoor plant, the project translates an invisible environmental cost into a physical and tangible process. The plant becomes a fragile unit of measurement, a lens through which the material impact of computation can be observed. Plant Lens questions technological delegation, progress, and ecological responsibility by proposing an interface that encourages restraint rather than optimization.
 
 ## Presentation
 
@@ -18,11 +18,11 @@ Plant Lens is a speculative installation that makes the water consumption of lan
 
 Plant Lens is a speculative robotic installation that makes the environmental cost of language models perceptible by translating computational activity into plant hydration. By linking digital interactions to a living organism, the project exposes the hidden water consumption behind contemporary AI systems and questions our relationship to technological delegation, progress, and care.
 
-Rather than proposing a solution, Plant Lens functions as a critical lens: a device that shifts attention from abstract computation to material, ecological consequences.
+Plant Lens functions as a critical lens: a device that shifts attention from abstract computation to material, ecological consequences.
 
 ### Initial intention
 
-The project started from a desire to make visible a noumenon — an environmental phenomenon that exists but remains imperceptible at a given moment in time.
+The project started from a desire to make visible a noumenon, an environmental phenomenon that exists but remains imperceptible at a given moment in time.
 
 Several directions were explored, including:
 
@@ -35,10 +35,9 @@ Indoor plants ultimately became the focus, as they embody a paradox: living orga
 ### Plants as a non-anthropocentric interface
 
 Plants offered a way to shift perspective away from human-centered interaction.
-They live on different temporal scales, move slowly, and express change through subtle transformations rather than immediate feedback.
+They live on different temporal scales, move slowly, and express change through subtle transformations rather than immediate feedback. "_They are very slow animals_" (Bridle, 2023).
 
-Inspired by research on plant intelligence (Mancuso, Bridle) and by speculative approaches to more-than-human design, the project reframed plants as living indicators.
-
+Inspired by research on plant intelligence (Mancuso, Bridle) the project reframed plants as living indicators.
 The plant becomes a lens through which technological systems are observed.
 
 ### Research and references
@@ -47,7 +46,7 @@ The conceptual framework draws from multiple domains:
 
 **Ecology & biology**
 
-- Mycorrhizal networks and the idea of distributed intelligence in living systems
+- Mycorrhizal networks and the idea of distributed intelligence in living systems (Wood Wide Web)
 - Research on plant sensitivity and communication (Mancuso, Backster, Bridle)
 
 **Robotics & technology**
@@ -71,7 +70,7 @@ Early experiments explored direct sensing of plants through capacitive sensors, 
 This led to a conceptual shift.
 Rather than attempting to "listen" to plants, the project chose to speak through them.
 
-The plant becomes a symbolic and material proxy — a fragile, finite body that can be affected by remote, abstract actions.
+The plant becomes a symbolic and material proxy, a fragile, finite body that can be affected by remote, abstract actions.
 
 ### The water–computation link
 
@@ -115,4 +114,3 @@ What are we willing to drain in order to keep delegating thought to machines?
 ![LLM Consommation](./assets/2026-01-15-how-it-works-1.jpeg)
 ![Goute à goute](./assets/2026-01-15-how-it-works-2.jpeg)
 ![Gaspillage](./assets/2026-01-15-how-it-works-3.jpeg)
-![Réservoir](./assets/2026-01-15-how-it-works-4.jpeg)

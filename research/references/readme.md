@@ -17,6 +17,8 @@ Some key references that inspired the project
 - [Synthetic Pollinator](https://www.creativeapplications.net/project/synthetic-pollenizer-robotic-interventions-in-the-real-world-ecological-systems/) (Michael Candy)
 - [Breeze](https://www.creativeapplications.net/member/breeze/) (Hua Zang)
 - [Plante Machete](https://www.dwbowen.com/plant-machete) (David Bowen)
+- [TerraSynthesis](https://www.instagram.com/p/DMa09K5Mb1Q/) (Miraal Habib)
+- [Telegarden](https://nt2.uqam.ca/fiches/telegarden) (Ken Goldberg & Joseph Santarromana)
 
 ## Fiction & Cinema
 
